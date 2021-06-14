@@ -5,19 +5,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
-public class Route {
-    private Integer id;
-    private List<Edge> edges = new ArrayList<>();
+@ToString()
+public class Edge {
 
-    public Route(Integer id) {
+    private Integer id;
+    private Double longitude;
+    private Double latitude;
+
+    public Edge(Integer id) {
         this.id = id;
     }
-
 }
